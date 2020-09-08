@@ -80,7 +80,7 @@ https://github.com/watucker/esgf.github.io/blob/idp-user-accounts/idp-registrati
   An application, typically a web application (e.g. COG), which may utilise user account information provided by the OpenID Connect protocol. This would be facilitated by acting as Relying Party to the IDP Proxy using some kind of OpenID Connect authentication library.
 ```
 ---
-## Register a Client (Portal)
+## Register a Client
 <img height="300" src="media/github-oauth-application-setup.png" alt="Register Client"/>
 * Clients (Apps) can request the Identity Provider to authenticate a user
 * Relying Party (RP)
@@ -89,7 +89,7 @@ https://github.com/watucker/esgf.github.io/blob/idp-user-accounts/idp-registrati
 <img height="400" src="media/github-oauth-client-details.png" alt="Client Details"/>
 ---
 ## User Registration
-* Users a registered in Keycloak
+* Users are registered in Keycloak
 * Username, Password, ...
 * Multiple IDPs possible ... Sign-in with GitHub at ESGF IDP Proxy.
 ```note
@@ -99,7 +99,7 @@ https://github.com/watucker/esgf.github.io/blob/idp-user-accounts/idp_user_accou
 ## Sign-in to a Portal
 https://demo-phoenix.cloud.dkrz.de/
 <img height="300" src="media/keycloak-sign-in.png" alt="Keycloak Sign-in"/>
-* Using redirection-based flow
+Using redirection-based flow
 ```note
 https://github.com/oauthlib/oauthlib
 
@@ -128,6 +128,7 @@ https://www.oauth.com/oauth2-servers/making-authenticated-requests/
 **Bearer Token:**
   This is a token included in an HTTP Authorization header that authorizes access to a particular resource or set of resources without the sender needing to prove their identity.
 ```
+---
 ## JSON Web Tokens
 * securely transmitting information between parties as a JSON.
 * can be verified and trusted because it is digitally signed.
@@ -137,6 +138,8 @@ https://jwt.io/
 <img height="280" src="media/keycloak-backend-client.png" alt="Keycload Backend Client"/>
 From terminal or Jupyter notebook
 ```note
+https://twitcher.readthedocs.io/en/latest/notebooks/twitcher-keycloak-demo.html
+
 A public client utilizing the client credentials grant workflow.
 
 The client can request an access token using only its client credentials (or other supported means of authentication) when the client is requesting access to the protected resources under its control, or those of another resource owner which has been previously arranged with the authorization server (the method of which is beyond the scope of this specification).
@@ -149,4 +152,7 @@ Since the client authentication is used as the authorization grant, no additiona
 ## Use Bearer Token to access Resource
 Add token in header variable "Bearer" to access resource
 <img height="300" src="media/birdy-example-with-token.png" alt="birdy with token"/>
+```note
+https://github.com/bird-house/twitcher/blob/master/notebooks/twitcher-keycloak-online-demo.ipynb
+```
 ---
