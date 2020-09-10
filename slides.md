@@ -25,6 +25,9 @@ Today, if someone wants to implement OAuth 2.0 for their web service, they need 
 Interestingly, most of the web services that do implement OAuth 2.0 for their APIs come to many of the same decisions, and so most of the OAuth 2.0 APIs in existence look very similar.
 ```
 ---
+## Simple Guide to OAuth 2.0
+https://medium.com/@darutk/the-simplest-guide-to-oauth-2-0-8c71bd9a15bb
+---
 ## Keycloak
 
 * Open Source Identity and Access Management
